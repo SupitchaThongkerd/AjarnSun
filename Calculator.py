@@ -17,7 +17,7 @@ class Ui_Form(object):
         Form.resize(483, 665)
         font = QtGui.QFont()
         font.setFamily("Avenir")
-        font.setPointSize(35)
+        font.setPointSize(36)
         Form.setFont(font)
         Form.setStyleSheet("background-color: rgb(169, 177, 235)\n"
 "\n"
