@@ -208,6 +208,7 @@ class Ui_Form(object):
 "color: rgb(255, 224, 220)")
         self.plussign.setCheckable(False)
         self.plussign.setObjectName("plussign")
+
         self.equalsign = QtWidgets.QPushButton(Form, clicked = lambda: self.basicmath_it())
         self.equalsign.setGeometry(QtCore.QRect(30, 460, 91, 81))
         font = QtGui.QFont()
@@ -280,7 +281,7 @@ class Ui_Form(object):
         else:
                 if label[-1] != ".":
                         #not a number, must be + - / *
-                        if not label[-2].isnumeric():
+                        if not label[-1].isnumeric():
                                 self.output.setText(f'{label}')
 
     #remove recent character
@@ -288,7 +289,7 @@ class Ui_Form(object):
         #get character that on the label already
         label = self.output.text()
         #remove the recent string
-        label = label[:-1]
+        label = label[:-2]
         #output back to the label
         self.output.setText(label)
 
