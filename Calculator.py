@@ -17,12 +17,12 @@ class Ui_Form(object):
         Form.resize(483, 665)
         font = QtGui.QFont()
         font.setFamily("Avenir")
-        font.setPointSize(36)
+        font.setPointSize(35)
         Form.setFont(font)
         Form.setStyleSheet("background-color: rgb(169, 177, 235)\n"
 "\n"
 "")
-        self.seven = QtWidgets.QPushButton(Form)
+        self.seven = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("7"))
         self.seven.setGeometry(QtCore.QRect(30, 160, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -52,7 +52,7 @@ class Ui_Form(object):
         self.output.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.output.setIndent(-2)
         self.output.setObjectName("output")
-        self.eight = QtWidgets.QPushButton(Form)
+        self.eight = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("8"))
         self.eight.setGeometry(QtCore.QRect(140, 160, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -64,7 +64,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.eight.setCheckable(False)
         self.eight.setObjectName("eight")
-        self.nine = QtWidgets.QPushButton(Form)
+        self.nine = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("9"))
         self.nine.setGeometry(QtCore.QRect(250, 160, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -76,7 +76,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.nine.setCheckable(False)
         self.nine.setObjectName("nine")
-        self.dividesign = QtWidgets.QPushButton(Form)
+        self.dividesign = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("/"))
         self.dividesign.setGeometry(QtCore.QRect(360, 160, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -88,7 +88,7 @@ class Ui_Form(object):
 "color: rgb(255, 224, 220)")
         self.dividesign.setCheckable(False)
         self.dividesign.setObjectName("dividesign")
-        self.four = QtWidgets.QPushButton(Form)
+        self.four = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("4"))
         self.four.setGeometry(QtCore.QRect(30, 260, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -100,7 +100,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.four.setCheckable(False)
         self.four.setObjectName("four")
-        self.fivre = QtWidgets.QPushButton(Form)
+        self.fivre = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("5"))
         self.fivre.setGeometry(QtCore.QRect(140, 260, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -112,7 +112,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.fivre.setCheckable(False)
         self.fivre.setObjectName("fivre")
-        self.six = QtWidgets.QPushButton(Form)
+        self.six = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("6"))
         self.six.setGeometry(QtCore.QRect(250, 260, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -124,7 +124,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.six.setCheckable(False)
         self.six.setObjectName("six")
-        self.one = QtWidgets.QPushButton(Form)
+        self.one = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("1"))
         self.one.setGeometry(QtCore.QRect(30, 360, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -136,7 +136,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.one.setCheckable(False)
         self.one.setObjectName("one")
-        self.two = QtWidgets.QPushButton(Form)
+        self.two = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("2"))
         self.two.setGeometry(QtCore.QRect(140, 360, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -148,7 +148,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.two.setCheckable(False)
         self.two.setObjectName("two")
-        self.three = QtWidgets.QPushButton(Form)
+        self.three = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("3"))
         self.three.setGeometry(QtCore.QRect(250, 360, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -160,7 +160,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.three.setCheckable(False)
         self.three.setObjectName("three")
-        self.zero = QtWidgets.QPushButton(Form)
+        self.zero = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("0"))
         self.zero.setGeometry(QtCore.QRect(140, 460, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -172,7 +172,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 111);")
         self.zero.setCheckable(False)
         self.zero.setObjectName("zero")
-        self.mutiplysign = QtWidgets.QPushButton(Form)
+        self.mutiplysign = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("*"))
         self.mutiplysign.setGeometry(QtCore.QRect(360, 260, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -184,7 +184,7 @@ class Ui_Form(object):
 "color: rgb(255, 224, 220)")
         self.mutiplysign.setCheckable(False)
         self.mutiplysign.setObjectName("mutiplysign")
-        self.minussign = QtWidgets.QPushButton(Form)
+        self.minussign = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("-"))
         self.minussign.setGeometry(QtCore.QRect(360, 360, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -196,7 +196,7 @@ class Ui_Form(object):
 "color: rgb(255, 224, 220)")
         self.minussign.setCheckable(False)
         self.minussign.setObjectName("minussign")
-        self.plussign = QtWidgets.QPushButton(Form)
+        self.plussign = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("+"))
         self.plussign.setGeometry(QtCore.QRect(360, 460, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -208,7 +208,7 @@ class Ui_Form(object):
 "color: rgb(255, 224, 220)")
         self.plussign.setCheckable(False)
         self.plussign.setObjectName("plussign")
-        self.equalsign = QtWidgets.QPushButton(Form)
+        self.equalsign = QtWidgets.QPushButton(Form, clicked = lambda: self.basicmath_it())
         self.equalsign.setGeometry(QtCore.QRect(30, 460, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -220,7 +220,7 @@ class Ui_Form(object):
 "color: rgb(199, 255, 158)")
         self.equalsign.setCheckable(False)
         self.equalsign.setObjectName("equalsign")
-        self.dot = QtWidgets.QPushButton(Form)
+        self.dot = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("."))
         self.dot.setGeometry(QtCore.QRect(250, 460, 91, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -232,7 +232,7 @@ class Ui_Form(object):
 "color: rgb(55, 48, 173)")
         self.dot.setCheckable(False)
         self.dot.setObjectName("dot")
-        self.CE = QtWidgets.QPushButton(Form)
+        self.CE = QtWidgets.QPushButton(Form, clicked = lambda: self.remove_it())
         self.CE.setGeometry(QtCore.QRect(30, 560, 201, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -244,7 +244,7 @@ class Ui_Form(object):
 "color: rgb(255, 241, 157)")
         self.CE.setCheckable(False)
         self.CE.setObjectName("CE")
-        self.C = QtWidgets.QPushButton(Form)
+        self.C = QtWidgets.QPushButton(Form, clicked = lambda: self.press_it("C"))
         self.C.setGeometry(QtCore.QRect(250, 560, 201, 81))
         font = QtGui.QFont()
         font.setFamily("Futura")
@@ -259,6 +259,52 @@ class Ui_Form(object):
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def press_it(self, buttonpressed):
+        if buttonpressed == "C":
+                self.output.setText("0")
+
+        else:
+                #to start the output without 0 when already prssed the number button
+                if self.output.text() == "0":
+                        self.output.setText("")
+                #to concatenate the prssed number tgt
+                self.output.setText(f'{self.output.text()} {buttonpressed}')
+
+    #decimeal(dot)
+    def dot_it(self):
+        label = self.output.text()
+        if "." not in label:
+                self.output.setText(f'{label}.')
+        #if dot(".") already present, check if its a last character
+        else:
+                if label[-1] != ".":
+                        #not a number, must be + - / *
+                        if not label[-2].isnumeric():
+                                self.output.setText(f'{label}')
+
+    #remove recent character
+    def remove_it(self):
+        #get character that on the label already
+        label = self.output.text()
+        #remove the recent string
+        label = label[:-1]
+        #output back to the label
+        self.output.setText(label)
+
+
+    #basic math( + - x /)
+    def basicmath_it(self):
+        #get character that on the label already
+        label = self.output.text()
+        try:
+                answer = eval(label)
+                #output the answer to the screen
+                self.output.setText(str(answer))
+        except:
+                #output error to the screen
+                self.output.setText("ERROR")
+
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
