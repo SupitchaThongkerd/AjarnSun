@@ -270,7 +270,7 @@ class Ui_Form(object):
                 if self.output.text() == "0":
                         self.output.setText("")
                 #to concatenate the prssed number tgt
-                self.output.setText(f'{self.output.text()} {buttonpressed}')
+                self.output.setText(f'{self.output.text()}{buttonpressed}')
 
     #decimeal(dot)
     def dot_it(self):
@@ -289,7 +289,7 @@ class Ui_Form(object):
         #get character that on the label already
         label = self.output.text()
         #remove the recent string
-        label = label[:-2]
+        label = label[:-1]
         #output back to the label
         self.output.setText(label)
 
